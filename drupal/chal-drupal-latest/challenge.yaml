@@ -17,7 +17,7 @@ spec:
           - name: challenge
             volumeMounts:
               - name: flag-volume
-                mountPath: "/chroot/flag"
+                mountPath: "/flag"
         serviceAccountName: secret-readonly-sa
         volumes:
           - name: flag-volume
@@ -30,4 +30,4 @@ spec:
     # TIP: disable the healthcheck during development
     enabled: false
     image: europe-west4-docker.pkg.dev/internet-ctf/challenges/healthcheck:177ef56beea814dcb439485e5fa57eb290b16c81e5b75083f975aef027715571
-  image: europe-west4-docker.pkg.dev/internet-ctf/challenges/challenge:ee6b4607a8c2fdf42df26ff7a596fe5565fdfa558acc37077da31828188b3cb2
+  image: europe-west4-docker.pkg.dev/internet-ctf/challenges/challenge:b00aac0cddf8f81970384133fa866249e86a22d057005c27faf8a5f0f86871c7

@@ -8,5 +8,3 @@ foreach($nodes as $node){
    $node->set('title', 'abc');
    $node->save();
 }
-
-#drush php-script script2.php
