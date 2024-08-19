@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: chal-reverb
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: false
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: europe-west4-docker.pkg.dev/internet-ctf/challenges/challenge:4a28f94db39cd707d770c63aa961b1e5f65c61c7575a82e326ba7aec651bb3e1
